@@ -1,0 +1,30 @@
+[
+  {
+    "menu": {
+      "items": [
+        {
+          "title": "Задания"
+        },
+        {
+          "title": "Финансы"
+        },
+        {
+          "title": "Компания"
+        },
+        {
+          "title": "Статистика"
+        }
+      ]
+    },
+    "personalInfo": {
+      "balance": 9153219.28,
+      "username": "Никита Ласточкин",
+      "notifications": {
+        "isActive": true,
+        "messages": {
+          "count": 5
+        }
+      }
+    }
+  }
+]

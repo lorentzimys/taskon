@@ -1,0 +1,727 @@
+
+
+[
+  {
+    "taskTypes": [
+      {
+        "type": "New",
+        "_id": "59b06c741fed6629cfb45dbb",
+        "text": "Новые"
+      },
+      {
+        "type": "InProgress",
+        "_id": "59b06c74af240305049d7d4b",
+        "text": "В работе"
+      },
+      {
+        "type": "OnReview",
+        "_id": "59b06c74d67112c22a9f768d",
+        "text": "На рассмотрении"
+      },
+      {
+        "type": "Complete",
+        "_id": "59b06c741c9487c8db6337b2",
+        "text": "Выполнены"
+      },
+      {
+        "type": "Cancelled",
+        "_id": "59b06c74fc5e77a946d836a6",
+        "text": "Отменены"
+      },
+      {
+        "type": "Drafts",
+        "_id": "59b06c749133bb8cf687ec51",
+        "text": "Черновики"
+      }
+    ],
+    "taskProperties": [
+      {
+        "type": "Personal",
+        "_id": "59b06c7435c30de7f6a666aa",
+        "text": "Персональное"
+      },
+      {
+        "type": "NightWork",
+        "_id": "59b06c74f435f87dce73f0a8",
+        "text": "Ночное"
+      },
+      {
+        "type": "Urgent",
+        "_id": "59b06c741349a76533dfc4fe",
+        "text": "Срочное"
+      }
+    ],
+    "tasks": [
+      {
+        "__id": "59b077c72edc698e121787f9",
+        "index": 0,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-06-28T11:22:35 -04:00",
+        "total": 1121,
+        "taskType": "New",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7e5268454f140746a",
+        "index": 1,
+        "city": "Самара",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-08-19T07:04:55 -04:00",
+        "total": 2131,
+        "taskType": "Cancelled",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c73f21606e72e12272",
+        "index": 2,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-09-29T07:42:47 -04:00",
+        "total": 2185,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c70afae7150306bfa7",
+        "index": 3,
+        "city": "Нижний Новгород",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-05-28T10:57:02 -04:00",
+        "total": 2188,
+        "taskType": "OnReview",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7df04f032925b19f9",
+        "index": 4,
+        "city": "Нижний Новгород",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-05-24T08:03:14 -04:00",
+        "total": 1094,
+        "taskType": "OnReview",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c744b137156ef2f862",
+        "index": 5,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-06-01T03:45:46 -04:00",
+        "total": 2534,
+        "taskType": "InProgress",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c73dc32519bdd1599a",
+        "index": 6,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-08-14T02:33:30 -04:00",
+        "total": 2594,
+        "taskType": "Complete",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c78d39f7a6abd7197f",
+        "index": 7,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-07-12T10:40:17 -04:00",
+        "total": 1988,
+        "taskType": "OnReview",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7cd0ab198f8b982e0",
+        "index": 8,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-27T07:54:53 -04:00",
+        "total": 1453,
+        "taskType": "New",
+        "taskProp": "Urgent"
+      },
+      {
+        "__id": "59b077c74a8b2d9e6c48f30d",
+        "index": 9,
+        "city": "Нижний Новгород",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-08-16T05:10:28 -04:00",
+        "total": 2227,
+        "taskType": "New",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c7d508e7d3c072ec97",
+        "index": 10,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-07-23T08:27:40 -04:00",
+        "total": 3277,
+        "taskType": "OnReview",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c7af154c1e569a5d07",
+        "index": 11,
+        "city": "Нижний Новгород",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2018-01-11T08:22:19 -04:00",
+        "total": 3354,
+        "taskType": "Cancelled",
+        "taskProp": "NightWork"
+      },
+      {
+        "__id": "59b077c7900af3c7b92a16d9",
+        "index": 12,
+        "city": "Москва",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-05-01T12:02:14 -04:00",
+        "total": 2318,
+        "taskType": "OnReview",
+        "taskProp": "Urgent"
+      },
+      {
+        "__id": "59b077c703421037751ba329",
+        "index": 13,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-12-14T12:23:26 -04:00",
+        "total": 1610,
+        "taskType": "InProgress",
+        "taskProp": "NightWork"
+      },
+      {
+        "__id": "59b077c7ec1f219d1a2418ea",
+        "index": 14,
+        "city": "Москва",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-12-26T07:33:17 -04:00",
+        "total": 1009,
+        "taskType": "Cancelled",
+        "taskProp": "NightWork"
+      },
+      {
+        "__id": "59b077c7736c1c5c8f8c82b1",
+        "index": 15,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-08-11T03:58:31 -04:00",
+        "total": 1368,
+        "taskType": "OnReview",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c73e372f2075d7d023",
+        "index": 16,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-07-26T01:34:48 -04:00",
+        "total": 2630,
+        "taskType": "InProgress",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c7c5af178c27ac09ec",
+        "index": 17,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2018-01-16T11:54:46 -04:00",
+        "total": 1540,
+        "taskType": "Cancelled",
+        "taskProp": "Urgent"
+      },
+      {
+        "__id": "59b077c780bcb83d70cfe692",
+        "index": 18,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2018-01-08T02:36:35 -04:00",
+        "total": 2546,
+        "taskType": "Complete",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c798dff619971db13f",
+        "index": 19,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-07-16T04:49:51 -04:00",
+        "total": 3895,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c725e1c60282d70a57",
+        "index": 20,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-30T04:42:21 -04:00",
+        "total": 3984,
+        "taskType": "Cancelled",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7a3c2a70a7149c9cc",
+        "index": 21,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-12-28T10:10:50 -04:00",
+        "total": 2655,
+        "taskType": "InProgress",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c73870966ca1f546e7",
+        "index": 22,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-09-07T11:16:19 -04:00",
+        "total": 1978,
+        "taskType": "Complete",
+        "taskProp": "NightWork"
+      },
+      {
+        "__id": "59b077c7306cf5431bd96664",
+        "index": 23,
+        "city": "Самара",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2018-01-22T06:22:58 -04:00",
+        "total": 2532,
+        "taskType": "InProgress",
+        "taskProp": "NightWork"
+      },
+      {
+        "__id": "59b077c76ef87e7b1c7c8c1e",
+        "index": 24,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-10-19T12:33:55 -04:00",
+        "total": 2564,
+        "taskType": "Cancelled",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7f04723d442129566",
+        "index": 25,
+        "city": "Нижний Новгород",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-12-07T05:33:06 -04:00",
+        "total": 1887,
+        "taskType": "InProgress",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7b0f646784943bf52",
+        "index": 26,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-12-18T11:01:42 -04:00",
+        "total": 3225,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c709761e7249a1693d",
+        "index": 27,
+        "city": "Самара",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-05-12T05:11:00 -04:00",
+        "total": 3734,
+        "taskType": "OnReview",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7c974fbdd0e2bb3a9",
+        "index": 28,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-05-21T08:46:16 -04:00",
+        "total": 2961,
+        "taskType": "Cancelled",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7a510bb4f08bf5468",
+        "index": 29,
+        "city": "Москва",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-12-26T05:00:32 -04:00",
+        "total": 2656,
+        "taskType": "OnReview",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7fdf51157a92416a9",
+        "index": 30,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-07-20T01:04:20 -04:00",
+        "total": 1424,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7e604830f07539246",
+        "index": 31,
+        "city": "Нижний Новгород",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-10-19T09:17:06 -04:00",
+        "total": 1566,
+        "taskType": "Complete",
+        "taskProp": "Urgent"
+      },
+      {
+        "__id": "59b077c7ef3e0cbc25e4a8df",
+        "index": 32,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-10-17T12:18:58 -04:00",
+        "total": 2435,
+        "taskType": "InProgress",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c71add60804f59b83a",
+        "index": 33,
+        "city": "Нижний Новгород",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-21T04:23:07 -04:00",
+        "total": 1724,
+        "taskType": "New",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c722aae29410fb599a",
+        "index": 34,
+        "city": "Нижний Новгород",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-07-16T12:27:51 -04:00",
+        "total": 3894,
+        "taskType": "Drafts",
+        "taskProp": "NightWork"
+      },
+      {
+        "__id": "59b077c723827d12545a3356",
+        "index": 35,
+        "city": "Нижний Новгород",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-10-01T02:33:26 -04:00",
+        "total": 2109,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c78f7c732e155fc755",
+        "index": 36,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-12-19T07:58:47 -04:00",
+        "total": 1442,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c769d490064f9223b5",
+        "index": 37,
+        "city": "Самара",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-05-04T06:54:13 -04:00",
+        "total": 3651,
+        "taskType": "InProgress",
+        "taskProp": "NightWork"
+      },
+      {
+        "__id": "59b077c792332f2dbe567646",
+        "index": 38,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2018-01-03T09:22:02 -04:00",
+        "total": 1581,
+        "taskType": "Complete",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c7860e99969679ba85",
+        "index": 39,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-26T03:08:33 -04:00",
+        "total": 1709,
+        "taskType": "Cancelled",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7222543849344a91c",
+        "index": 40,
+        "city": "Москва",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-11-18T06:14:06 -04:00",
+        "total": 2106,
+        "taskType": "Complete",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7147c79b253ea6281",
+        "index": 41,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-10-01T12:47:14 -04:00",
+        "total": 2382,
+        "taskType": "New",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7e079a8ab47cc6aff",
+        "index": 42,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-12-30T08:19:59 -04:00",
+        "total": 1823,
+        "taskType": "OnReview",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7de3be71e204ed622",
+        "index": 43,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-21T07:34:06 -04:00",
+        "total": 1055,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7c3347ff913ec5525",
+        "index": 44,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-11-01T11:35:30 -04:00",
+        "total": 1366,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7a887f2f110af5db3",
+        "index": 45,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-26T02:47:32 -04:00",
+        "total": 2540,
+        "taskType": "New",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7de6f56d3459443a1",
+        "index": 46,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-12-11T11:25:18 -04:00",
+        "total": 1772,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c71db05616ef30226f",
+        "index": 47,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-13T11:05:49 -04:00",
+        "total": 3355,
+        "taskType": "Complete",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7119e2ae716f8ef4c",
+        "index": 48,
+        "city": "Самара",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-09-01T01:18:16 -04:00",
+        "total": 1594,
+        "taskType": "Drafts",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c7a600d552cb285c9a",
+        "index": 49,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-11-15T04:20:57 -04:00",
+        "total": 1494,
+        "taskType": "OnReview",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c728dfbb983847a34d",
+        "index": 50,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-07-28T02:37:33 -04:00",
+        "total": 1091,
+        "taskType": "InProgress",
+        "taskProp": "Urgent"
+      },
+      {
+        "__id": "59b077c7ce4a147a3293a705",
+        "index": 51,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-20T03:50:19 -04:00",
+        "total": 1810,
+        "taskType": "Cancelled",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c7d590bf2e1a2f58da",
+        "index": 52,
+        "city": "Москва",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-06-20T10:55:16 -04:00",
+        "total": 1279,
+        "taskType": "Cancelled",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7e59eabe3fb5b6d06",
+        "index": 53,
+        "city": "Нижний Новгород",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-07-02T04:09:56 -04:00",
+        "total": 3046,
+        "taskType": "Cancelled",
+        "taskProp": "Personal"
+      },
+      {
+        "__id": "59b077c72c0f098f7fbc5573",
+        "index": 54,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-06-19T11:02:38 -04:00",
+        "total": 2033,
+        "taskType": "InProgress",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7a2c7c105a3f2ebb1",
+        "index": 55,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-06-30T09:27:18 -04:00",
+        "total": 1342,
+        "taskType": "OnReview",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7741cf06bdac48c3e",
+        "index": 56,
+        "city": "Нижний Новгород",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-08-24T08:50:18 -04:00",
+        "total": 3752,
+        "taskType": "New",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7ae1a6de147fa8a47",
+        "index": 57,
+        "city": "Москва",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-05-24T11:06:47 -04:00",
+        "total": 3967,
+        "taskType": "Cancelled",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c79448c5209f963ec5",
+        "index": 58,
+        "city": "Нижний Новгород",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-10-10T06:18:22 -04:00",
+        "total": 2226,
+        "taskType": "New",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7338f8ee95d4e8a1a",
+        "index": 59,
+        "city": "Нижний Новгород",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-12-04T05:28:12 -04:00",
+        "total": 1710,
+        "taskType": "OnReview",
+        "taskProp": "NightWork"
+      },
+      {
+        "__id": "59b077c765bb7ec990f633ca",
+        "index": 60,
+        "city": "Москва",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-11-16T09:06:56 -04:00",
+        "total": 2682,
+        "taskType": "Drafts",
+        "taskProp": "Urgent"
+      },
+      {
+        "__id": "59b077c73c63b858ad6a08ef",
+        "index": 61,
+        "city": "Нижний Новгород",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-05-01T02:20:29 -04:00",
+        "total": 3195,
+        "taskType": "Cancelled",
+        "taskProp": "Urgent"
+      },
+      {
+        "__id": "59b077c75ad68e6ec6e01ff5",
+        "index": 62,
+        "city": "Москва",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-05-31T09:58:11 -04:00",
+        "total": 2741,
+        "taskType": "New",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c705bf12db7d70542f",
+        "index": 63,
+        "city": "Нижний Новгород",
+        "responsible": "Иван Васильев",
+        "completeBefore": "2017-08-10T03:52:40 -04:00",
+        "total": 1444,
+        "taskType": "InProgress",
+        "taskProp": "Urgent"
+      },
+      {
+        "__id": "59b077c767a6ba05f7e40ea2",
+        "index": 64,
+        "city": "Самара",
+        "responsible": "Виктор Лохматов",
+        "completeBefore": "2017-06-29T09:02:41 -04:00",
+        "total": 2191,
+        "taskType": "Drafts",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c706dd284274b928cf",
+        "index": 65,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-10-15T02:44:39 -04:00",
+        "total": 3998,
+        "taskType": "Complete",
+        "taskProp": null
+      },
+      {
+        "__id": "59b077c7e1a621d96d18cc8a",
+        "index": 66,
+        "city": "Самара",
+        "responsible": "Султан Зарипов",
+        "completeBefore": "2017-10-09T07:24:15 -04:00",
+        "total": 1316,
+        "taskType": "OnReview",
+        "taskProp": null
+      }
+    ]
+  }
+]
