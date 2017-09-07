@@ -1,6 +1,7 @@
 import angular from 'angular';
 
 import appHeader from "./components/header/header";
+import tabMenu from "./components/tab-menu/tab-menu";
 import '../style/app.css';
 
 const MODULE_NAME = 'app';
@@ -19,7 +20,7 @@ class AppCtrl {
     }
 }
 
-angular.module(MODULE_NAME, [appHeader])
+angular.module(MODULE_NAME, [appHeader, tabMenu])
     .directive('app', app)
     .controller('AppCtrl', AppCtrl);
 
