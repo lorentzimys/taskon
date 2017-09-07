@@ -1,0 +1,39 @@
+{
+  "name": "taskon-test-app",
+  "version": "1.0.0",
+  "description": "Тестовое задание Wowworks",
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress",
+    "start": "npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lorentzimys/taskon.git"
+  },
+  "author": "Alexey Stepanov",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "copy-webpack-plugin": "4.0.1",
+    "css-loader": "0.26.1",
+    "extract-text-webpack-plugin": "2.0.0-beta.5",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.7.1",
+    "json-loader": "^0.5.7",
+    "node-libs-browser": "2.0.0",
+    "postcss-loader": "1.2.2",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.1",
+    "style-loader": "^0.13.0",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
+  }
+}
