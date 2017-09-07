@@ -1,0 +1,25 @@
+ul {
+    margin: 0 40px;
+    padding: 0;
+    display: inline-block;
+    font-weight: 300;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 18px;
+}
+
+li a {
+    color: var(--warm-grey);
+    transition: all 250ms ease;
+    text-decoration: none;
+}
+
+li a:hover,
+li a.active {
+    color: var(--white);
+}
+
+
