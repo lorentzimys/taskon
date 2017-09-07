@@ -1,24 +1,22 @@
-ul {
+ul.header-menu-list {
     margin: 0 40px;
     padding: 0;
     display: inline-block;
     font-weight: 300;
 }
 
-li {
-    display: inline-block;
-    list-style-type: none;
+ul.header-menu-list li {
     margin: 0 18px;
 }
 
-li a {
+ul.header-menu-list li a {
     color: var(--warm-grey);
     transition: all 250ms ease;
-    text-decoration: none;
+    will-change: color;
 }
 
-li a:hover,
-li a.active {
+ul.header-menu-list li a:hover,
+ul.header-menu-list li a.active {
     color: var(--white);
 }
 

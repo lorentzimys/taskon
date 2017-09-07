@@ -1,0 +1,68 @@
+@import "../../../style/colors.css";
+
+.tab-list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    border-bottom: 1px solid var(--pinkish-grey);
+}
+
+.tab-list .tab-item {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.tab-list .tab-item a {
+    transition: all 250ms ease;
+    display: inline-block;
+    font-weight: 400;
+    will-change: color;
+    color: var(--warm-grey);
+}
+
+
+.tab-list .tab-item:after {
+    content: "";
+    display: block;
+    transition: all 250ms ease;
+    padding-bottom: 24px;
+    opacity: 0;
+    will-change: opacity;
+    transform: translateY(1px);
+}
+
+.tab-list .tab-item.active:after ,
+.tab-list .tab-item:hover:after {
+    height: 1px;
+    opacity: 1;
+    border-bottom: 1px solid var(--pinkish-orange);
+}
+
+.tab-list .tab-item.active a,
+.tab-list .tab-item:hover a {
+    color: var(--black);
+}
+
+.items-count-label {
+    border: 1px solid var(--pinkish-grey);
+    color: var(--pinkish-grey);
+    transition: all 250ms ease;
+    will-change: color;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 30px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: bottom;
+    line-height: 18px;
+    padding: 0px 6px;
+    letter-spacing: 0;
+}
+
+.items-count-label.important {
+    background: var(--pinkish-orange);
+    color: var(--white);
+    border-color: var(--pinkish-orange);
+}

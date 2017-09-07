@@ -5,15 +5,13 @@ header {
     height: 60px;
     width: 100%;
     color: var(--white);
-}
 
-.container {
-    line-height: 58px;
 }
 
 #app-logo {
     font-size: 24px;
     font-weight: 500;
+    line-height:60px;
     letter-spacing: 1px;
     color: var(--white);
     text-decoration: none;
