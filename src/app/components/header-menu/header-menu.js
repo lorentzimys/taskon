@@ -1,5 +1,7 @@
 import "./header-menu.css";
 
+import LayoutService from "../../services/LayoutService";
+
 const MODULE_NAME = 'headerMenu';
 
 let headerMenu = () => {
@@ -11,7 +13,10 @@ let headerMenu = () => {
 };
 
 class HeaderMenuCtrl {
-    constructor() {
+    constructor($scope) {
+        this.layoutService = new LayoutService();
+
+        $scope.menuItems = this.layoutService.getMenuItems();
 
     }
 }

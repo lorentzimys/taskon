@@ -1,35 +1,38 @@
-import layoutApi from "../api/layout.json";
+import layoutApi from "../../api/layout.json";
 import Person from "../models/Person";
 
-class LayoutService {
+export default class LayoutService {
 
     constructor(module) {
-        return module.service("layoutService", () => {
+        this.test = () => {
+            console.log(layoutApi);
+        };
 
-            getMenuItems = () => {
-                return layoutApi.menu.items;
-            };
+        this.getMenuItems = () => {
+            return layoutApi[0].menu.items;
+        };
 
-            getCurrentBalance = () => {
-                let person = new Person(layoutApi.personalInfo);
+        this.getCurrentBalance = () => {
+            let person = new Person(layoutApi[0].personalInfo);
 
-                return person.balance;
-            };
+            return person.balance;
+        };
 
-            getUsername = () => {
-                let username = new Person(layoutApi.personalInfo);
+        this.getUsername = () => {
+            let username = new Person(layoutApi[0].personalInfo);
 
-                return username;
-            };
+            return username;
+        };
 
-            var top = null;
+        var top = null;
 
-            var skip = null;
+        var skip = null;
 
-            getNotifications = (top, skip) => {
-                throw new Error("not implemented");
-            }
-        });
+        this.getNotifications = (top, skip) => {
+            throw new Error("not implemented");
+        };
+
+        // return module.service("layoutService", () => {});
     }
 
 }

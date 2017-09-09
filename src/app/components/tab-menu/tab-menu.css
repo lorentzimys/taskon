@@ -1,5 +1,9 @@
 @import "../../../style/colors.css";
 
+:root {
+    --transition: all 400ms ease;
+}
+
 .tab-list {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -13,7 +17,7 @@
 }
 
 .tab-list .tab-item a {
-    transition: all 250ms ease;
+    transition: var(--transition);
     display: inline-block;
     font-weight: 400;
     will-change: color;
@@ -24,7 +28,7 @@
 .tab-list .tab-item:after {
     content: "";
     display: block;
-    transition: all 250ms ease;
+    transition: var(--transition);
     padding-bottom: 24px;
     opacity: 0;
     will-change: opacity;
@@ -46,10 +50,9 @@
 .items-count-label {
     border: 1px solid var(--pinkish-grey);
     color: var(--pinkish-grey);
-    transition: all 250ms ease;
+    transition: var(--transition);
     will-change: color;
     margin-left: 5px;
-    margin-right: 5px;
     border-radius: 30px;
     height: 18px;
     display: inline-block;
@@ -61,7 +64,7 @@
     letter-spacing: 0;
 }
 
-.items-count-label.important {
+.items-count-label.unread {
     background: var(--pinkish-orange);
     color: var(--white);
     border-color: var(--pinkish-orange);

@@ -1,6 +1,3 @@
 <ul class="header-menu-list">
-    <li><a class="active" href="#">Задания</a></li>
-    <li><a href="#">Финансы</a></li>
-    <li><a href="#">Компания</a></li>
-    <li><a href="#">Статистика</a></li>
+    <li ng-repeat="item in menuItems"><a href="{{item.href}}">{{item.title}}</a></li>
 </ul>

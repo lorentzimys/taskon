@@ -1,37 +1,46 @@
-import tasksApi from "../api/tasks.json";
+import tasksApi from "../../api/tasks.json";
+import Task from "../models/Task";
+import TaskType from "../models/TaskType";
 
-class TasksService {
+export default class TasksService {
 
     constructor(module) {
-        return module.service("tasksService", () => {
-            getAllTasks = () => {
-                return tasksApi.tasks;
-            };
 
-            getTasksByType = (taskType) => {
-                const taskType = taskType ? taskType : null;
+        this.getTaskTypes = () => {
+            return tasksApi[0].taskTypes.map((t) => new TaskType(t));
+        };
 
-                if (taskType) {
-                    return tasksApi.tasks.filter((task) => {
-                        return task.taskType;
-                    });
-                } else {
-                    return new Error("Не задан тип задачи, обязательно для заполнения", "TasksService.js");
-                }
-            };
+        this.getAllTasks = () => {
+            return tasksApi[0].tasks.map((t) => new Task(t));
+        };
 
-            filterTasksByProperty = (tasks, property) => {
-                const propValues = tasksApi.taskTypes.map((obj) => obj.type);
-                const property = (property.indexOf(propValues)) ? property : null;
+        this.getTasksByType = (status) => {
+            status = status ? status : null;
 
-                if (Array.isArray(tasks)) {
-                    return tasksApi.tasks.filter((t) => t.taskProp === property);
-                } else {
-                    throw new Error("Неверный тип для параметра tasks, должен быть Array", "TasksService.js");
-                }
-            };
+            if (status) {
+                const filteredData = tasksApi[0].tasks.filter((t) => t.taskType === status);
 
-        });
+                return filteredData.map((t) => new Task(t));
+            } else {
+                return new Error("Не задан тип задачи, обязательно для заполнения", "TasksService.js");
+            }
+        };
+
+        this.filterTasksByProperty = (tasks, property) => {
+            const propValues = tasksApi[0].taskTypes.map((obj) => obj.type);
+
+            property = (property.indexOf(propValues)) ? property : null;
+
+            if (Array.isArray(tasks)) {
+                const filteredData = tasksApi[0].tasks.filter((t) => t.taskProp === property);
+
+                return filteredData.map((t) => new Task(t));
+            } else {
+                throw new Error("Неверный тип для параметра tasks, должен быть Array", "TasksService.js");
+            }
+        };
+
+        // return module.service("tasksService", () => {});
     }
 
 }

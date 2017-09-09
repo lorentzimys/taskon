@@ -1,18 +1,24 @@
 import "./tab-menu.css";
 
+
 const MODULE_NAME = 'tabMenu';
 
 let tabMenu = () => {
     return {
         template: require('./tab-menu.html'),
         controller: 'TabMenuCtrl',
-        controllerAs: 'tab-menu'
+        controllerAs: 'tabMenu',
     }
 };
 
 class TabMenuCtrl {
-    constructor() {
+    constructor($scope) {
 
+        console.log($scope);
+
+        this.filterTask = () => {
+            console.log("filter");
+        }
     }
 }
 

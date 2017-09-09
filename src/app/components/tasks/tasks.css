@@ -1,0 +1,48 @@
+.tasks-table {
+    width: 100%;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+.tasks-table tr {
+    border-bottom: 1px solid var(--warm-grey);
+}
+
+.tasks-table thead tr td {
+    color: var(--warm-grey);
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.tasks-table tr td {
+    border: 0px;
+
+}
+
+.tasks-table tr td.col_id {
+    width: 15%;
+}
+
+.tasks-table tr td.col_city {
+    width: 15%;
+}
+
+.tasks-table tr td.col_name {
+    width: 51%;
+}
+
+.tasks-table tr td.col_completeBefore {
+    width: 20%;
+
+}
+
+.tasks-table tr td.col_total {
+    width: 15%;
+}
+
+
+.tasks-table tbody tr td{
+    padding-top: 16px;
+    padding-bottom: 24px;
+}

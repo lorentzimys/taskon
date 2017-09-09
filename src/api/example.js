@@ -42,4 +42,20 @@ const exampleReq = [
             return fruits[tags.integer(0, fruits.length - 1)];
         }
     }
-]
+];
+
+const tasks = [
+    {
+        'repeat(5, 10)':{
+            _id: '{{objectId()}}',
+            index: '{{index()}}',
+            unread: '{{bool()}}',
+            city: 'random("Нижний Новгород" "Самара", "Москва")',
+            responsible: "Виктор Лохматов",
+            completeBefore: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}',
+            total: '{{integer(1000, 9999)}}',
+            taskType: 'random("New", "InProgress", "OnReview", "Complete", "Cancelled", "Drafts")',
+            taskProp: 'random(null, null, null, null, "Personal", "NightWork", "Urgent")'
+        }
+    }
+];
