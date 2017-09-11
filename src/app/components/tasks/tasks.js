@@ -1,4 +1,5 @@
 import tabMenu from "../tab-menu/tab-menu";
+import filterPanel from "../filter-panel/filter-panel";
 
 import TaskService from "../../services/TasksService"
 
@@ -60,7 +61,7 @@ export class TasksCtrl {
     }
 }
 
-angular.module(MODULE_NAME, [tabMenu])
+angular.module(MODULE_NAME, [tabMenu, filterPanel])
     .directive('tasks', tasks)
     .controller('TasksCtrl', TasksCtrl);
 

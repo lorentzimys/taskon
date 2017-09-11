@@ -1,5 +1,5 @@
 <tab-menu></tab-menu>
-
+<filter-panel></filter-panel>
 <div class="container">
     <table class="tasks-table" border="1">
         <thead>
@@ -17,7 +17,7 @@
             <td>{{t.city}}</td>
             <td>{{t.text}}</td>
             <td>{{t.completeBefore | date:'d MMMM'}}</td>
-            <td>{{t.total}} &#8381;</icon></td>
+            <td>{{t.total | number}} &#8381;</icon></td>
         </tr>
         </tbody>
     </table>

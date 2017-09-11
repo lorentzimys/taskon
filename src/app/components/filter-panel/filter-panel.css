@@ -1,0 +1,57 @@
+filter-panel {
+    margin: 0 40px;
+}
+
+.input-group {
+    display: inline-block;
+    margin-right: 30px;
+    color: var(--warm-grey);
+}
+
+#seachField {
+    padding: 8px 12px;
+    border: 1px solid;
+    border-color: var(--warm-grey);
+    outline-color: var(--pinkish-orange);
+}
+
+#seachField::placeholder {
+    will-change: color;
+    transition: color 250ms ease;
+    color: var(--warm-grey);
+}
+
+#seachField:focus::placeholder {
+    color: transparent;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-custom {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--warm-grey);
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #413548;
+    border-radius: 2px;
+}
