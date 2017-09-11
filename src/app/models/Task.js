@@ -4,6 +4,7 @@ export default class Task {
         this.index = task.index;
         this.unread = task.unread;
         this.city = task.city ? task.city : null;
+        this.text = task.text ? task.text : null;
         this.responsible = task.responsible ? task.responsible : null;
         this.completeBefore = task.completeBefore ? new Date(task.completeBefore) : null;
         this.total = task.total ? task.total : null;

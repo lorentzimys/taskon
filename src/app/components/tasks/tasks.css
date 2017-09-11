@@ -2,6 +2,7 @@
     width: 100%;
     border: 0px;
     border-collapse: collapse;
+    margin-top: 40px;
 }
 
 .tasks-table tr {
@@ -17,28 +18,28 @@
 
 .tasks-table tr td {
     border: 0px;
-
+    padding: 0 10px;
 }
 
-.tasks-table tr td.col_id {
+.tasks-table tr td:first-child {
+    width: 10%;
+}
+
+.tasks-table tr td:nth-child(2) {
     width: 15%;
 }
 
-.tasks-table tr td.col_city {
-    width: 15%;
+.tasks-table tr td:nth-child(3) {
+    width: 50%;
+    margin-right: 5%;
 }
 
-.tasks-table tr td.col_name {
-    width: 51%;
+.tasks-table tr td:nth-child(4){
+    width: 10%;
 }
 
-.tasks-table tr td.col_completeBefore {
-    width: 20%;
-
-}
-
-.tasks-table tr td.col_total {
-    width: 15%;
+.tasks-table tr td:nth-child(5) {
+    width: 10%;
 }
 
 

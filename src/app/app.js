@@ -1,4 +1,5 @@
 import angular from 'angular';
+import '../ngLocale/angular-locale-ru-ru';
 
 import appHeader from "./components/header/header";
 import tasks from "./components/tasks/tasks";
@@ -29,7 +30,7 @@ class AppCtrl {
     }
 }
 
-angular.module(MODULE_NAME, [appHeader, tasks])
+angular.module(MODULE_NAME, [appHeader, tasks, 'ngLocale'])
     .directive('app', app)
     .controller('AppCtrl', AppCtrl);
 

@@ -15,9 +15,9 @@
         <tr ng-repeat="t in tasks.tasks">
             <td>{{t.index}}</td>
             <td>{{t.city}}</td>
-            <td>Подключение провода</td>
-            <td>{{t.completeBefore}}</td>
-            <td>{{t.total}}</td>
+            <td>{{t.text}}</td>
+            <td>{{t.completeBefore | date:'d MMMM'}}</td>
+            <td>{{t.total}} &#8381;</icon></td>
         </tr>
         </tbody>
     </table>

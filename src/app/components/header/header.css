@@ -1,11 +1,9 @@
-@import "../../../style/colors.css";
-
 header {
     background: var(--black);
-    height: 60px;
+    height: var(--header-height);
     width: 100%;
     color: var(--white);
-
+    position: fixed;
 }
 
 #app-logo {

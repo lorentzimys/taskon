@@ -46,16 +46,17 @@ const exampleReq = [
 
 const tasks = [
     {
-        'repeat(5, 10)':{
+        'repeat(60, 100)':{
             _id: '{{objectId()}}',
             index: '{{index()}}',
-            unread: '{{bool()}}',
-            city: 'random("Нижний Новгород" "Самара", "Москва")',
+            unread: 'false',
+            city: '{{random("Нижний Новгород", "Самара", "Москва")}}',
             responsible: "Виктор Лохматов",
             completeBefore: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-ddThh:mm:ss Z")}}',
             total: '{{integer(1000, 9999)}}',
-            taskType: 'random("New", "InProgress", "OnReview", "Complete", "Cancelled", "Drafts")',
-            taskProp: 'random(null, null, null, null, "Personal", "NightWork", "Urgent")'
+            taskType: '{{random("New", "InProgress", "OnReview", "Complete", "Cancelled", "Drafts")}}',
+            taskProp: '{{random(null, null, null, null, "Personal", "NightWork", "Urgent")}}',
+            text: 'Подключение провода от клеммной коробки пожарной сигнализации к расцепителю, проверить работоспособность'
         }
     }
 ];
