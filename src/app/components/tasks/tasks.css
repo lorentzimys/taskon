@@ -6,7 +6,18 @@
 }
 
 .tasks-table tr {
-    border-bottom: 1px solid var(--warm-grey);
+    display: block;
+    width: 100%;
+    /*border-bottom: 1px solid;*/
+    /*border-color: var(--warm-grey-rgba);*/
+}
+
+.tasks-table tr:after {
+    display: block;
+    height: 1px;
+    width: 100%;
+    content: " ";
+    background: var(--warm-grey);
 }
 
 .tasks-table thead tr td {
@@ -42,8 +53,34 @@
     width: 10%;
 }
 
-
 .tasks-table tbody tr td{
     padding-top: 16px;
     padding-bottom: 24px;
+}
+
+/*.task-row.ng-enter {*/
+    /*opacity: 0;*/
+    /*transform: translateY(-14px);*/
+    /*transition: all 0.5s ease;*/
+    /*transition-delay: 0s;*/
+/*}*/
+
+/*.task-row.ng-enter.ng-enter-active {*/
+    /*opacity: 1;*/
+    /*transform: translateY(0);*/
+/*}*/
+
+/*.task-row.ng-leave {*/
+    /*transition: all 0.5s ease;*/
+    /*transition-delay: 0.1s;*/
+    /*opacity: 1;*/
+    /*transform: translateY(0px);*/
+/*}*/
+/*.task-row.ng-leave.ng-leave-active {*/
+    /*opacity: 0;*/
+    /*transform: translateY(-14px);*/
+/*}*/
+
+.task-row.ng-enter-stagger {
+    transition-delay: 1s;
 }

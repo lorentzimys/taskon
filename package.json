@@ -15,6 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "angular": "1.5.9",
+    "angular-animate": "^1.5.9",
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {

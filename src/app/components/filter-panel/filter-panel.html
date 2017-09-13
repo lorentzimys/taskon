@@ -1,34 +1,18 @@
 <div class="container">
     <div class="input-group">
-        <input id="seachField" type="text" placeholder="Поиск по слову">
+        <input id="seachField" ng-model="tasks.searchFieldValue" type="text" placeholder="Поиск по слову">
     </div>
 
-    <div class="input-group">
-        <label for="personal">
-            <input class="checkbox" id="personal" type="checkbox">
-            <span class="checkbox-custom"></span>
-            <span class="label">Персональное</span>
+    <div class="input-group" class="checkbox" ng-click="tasks.togglePropCheckbox(prop, $event)" ng-repeat="prop in tasks.taskProps">
+        <label for="{{prop.type}}_checkbox">
+            <input id="{{prop.type}}_checkbox" ng-value="prop.type" class="checkbox" type="checkbox">
+            <div class="checkbox-custom"></div>
+            <div class="label">{{prop.text}}</div>
         </label>
     </div>
 
     <div class="input-group">
-        <label for="nightWork">
-            <input class="checkbox" id="nightWork" type="checkbox">
-            <span class="checkbox-custom"></span>
-            <span class="label">Ночное</span>
-        </label>
-    </div>
-
-    <div class="input-group">
-        <label for="Urgent">
-            <input class="checkbox" id="Urgent" type="checkbox">
-            <span class="checkbox-custom"></span>
-            <span class="label">Срочное</span>
-        </label>
-    </div>
-
-    <div class="input-group">
-
+        <dropdown placeholder="{{}}" list="colours" selected="colour" property="name">Никита Ласточкин</dropdown>
     </div>
 
 </div>

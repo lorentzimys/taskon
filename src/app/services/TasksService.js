@@ -14,6 +14,10 @@ export default class TasksService {
             return tasksApi[0].tasks.map((t) => new Task(t));
         };
 
+        this.getTasksProperties = () => {
+            return tasksApi[0].taskProperties;
+        };
+
         this.getTasksByType = (status) => {
             status = status ? status : null;
 

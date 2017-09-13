@@ -1,17 +1,22 @@
 import './filter-panel.css';
 
+import TaskService from "../../services/TasksService"
+
 const MODULE_NAME = 'filter-panel';
 
 let filterPanel = () => {
     return {
         template: require('./filter-panel.html'),
         controller: 'FilterPanelCtrl',
-        controllerAs: 'filter-panel'
+        controllerAs: 'filterPanel'
     }
 };
 
 class FilterPanelCtrl {
-    constructor() {
+    constructor($scope) {
+        console.log($scope);
+
+        this.taskService = new TaskService();
     }
 }
 

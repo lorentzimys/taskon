@@ -3,22 +3,22 @@
 <div class="container">
     <table class="tasks-table" border="1">
         <thead>
-        <tr>
-            <td>ID</td>
-            <td>Город</td>
-            <td>Название</td>
-            <td>Выполнить до</td>
-            <td>Сумма</td>
-        </tr>
+            <tr>
+                <td>ID</td>
+                <td>Город</td>
+                <td>Название</td>
+                <td>Выполнить до</td>
+                <td>Сумма</td>
+            </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="t in tasks.tasks">
-            <td>{{t.index}}</td>
-            <td>{{t.city}}</td>
-            <td>{{t.text}}</td>
-            <td>{{t.completeBefore | date:'d MMMM'}}</td>
-            <td>{{t.total | number}} &#8381;</icon></td>
-        </tr>
+            <tr class="task-row" ng-repeat="t in tasks.tasks | filter: tasks.filterTasks">
+                <td>{{t.index}}</td>
+                <td>{{t.city}}</td>
+                <td>{{t.text}}</td>
+                <td>{{t.completeBefore | date:'d MMMM'}}</td>
+                <td>{{t.total | number}} &#8381;</icon></td>
+            </tr>
         </tbody>
     </table>
 

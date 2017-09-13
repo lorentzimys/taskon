@@ -1,4 +1,5 @@
 import angular from 'angular';
+import 'angular-animate';
 import '../ngLocale/angular-locale-ru-ru';
 
 import appHeader from "./components/header/header";
@@ -30,7 +31,7 @@ class AppCtrl {
     }
 }
 
-angular.module(MODULE_NAME, [appHeader, tasks, 'ngLocale'])
+angular.module(MODULE_NAME, [appHeader, tasks, 'ngLocale', 'ngAnimate'])
     .directive('app', app)
     .controller('AppCtrl', AppCtrl);
 
