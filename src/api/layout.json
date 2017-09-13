@@ -23,12 +23,18 @@
     "personalInfo": {
       "balance": 9153219.28,
       "username": "Никита Ласточкин",
-      "notifications": {
-        "isActive": true,
-        "messages": {
-          "count": 5
+      "notifications": [
+        {
+          "text": "Задача просрочена"
+        },
+        {
+          "text": "Очень важное сообщение"
+        },
+        {
+          "text": "Очень важное сообщение длинною в несколько строк"
         }
-      }
+      ]
     }
   }
 ]
+

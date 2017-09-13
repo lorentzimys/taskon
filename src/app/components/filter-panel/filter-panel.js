@@ -1,7 +1,5 @@
 import './filter-panel.css';
 
-import TaskService from "../../services/TasksService"
-
 const MODULE_NAME = 'filter-panel';
 
 let filterPanel = () => {
@@ -16,7 +14,6 @@ class FilterPanelCtrl {
     constructor($scope) {
         console.log($scope);
 
-        this.taskService = new TaskService();
     }
 }
 

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="balance-wrapper">
+        Баланс
+        <span class="balance-value">{{header.balance | number}} &#8381;</span>
+    </div>
+    <div class="notification-wrapper">
+        <a class="icon notification"
+           ng-class="{highlight: header.notificationsHighlighted}"
+           tooltips
+           tooltip-side="bottom"
+           tooltip-class="notification-tooltip"
+           tooltip-size="small"
+           tooltip-template="{{header.getNotificationsTpl()}}"
+           tooltip-speed="fast"></a>
+    </div>
+    <div class="userinfo-wrapper">
+        <a class='username custom-dropdown'
+           dropdown-menu="header.userMenuOptions"
+           dropdown-item-label="text">
+            {{header.username}}
+        </a>
+    </div>
+    <div class="info-wrapper">
+        <a class="icon info"
+           tooltips
+           tooltip-side="bottom"
+           tooltip-template="{{header.username}}"
+           tooltip-speed="fast"></a>
+    </div>
+
+</div>

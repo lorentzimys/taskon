@@ -18,18 +18,14 @@ export default class LayoutService {
             return person.balance;
         };
 
-        this.getUsername = () => {
+        this.getPersonalInfo = () => {
             let username = new Person(layoutApi[0].personalInfo);
 
             return username;
         };
 
-        var top = null;
-
-        var skip = null;
-
-        this.getNotifications = (top, skip) => {
-            throw new Error("not implemented");
+        this.getNotifications = () => {
+            return layoutApi[0].personalInfo.notifications;
         };
 
         // return module.service("layoutService", () => {});

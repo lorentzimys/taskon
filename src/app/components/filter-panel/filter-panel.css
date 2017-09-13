@@ -8,6 +8,8 @@ filter-panel {
     color: var(--warm-grey);
 }
 
+/* Searchfield */
+
 #seachField {
     padding: 8px 12px;
     border: 1px solid;
@@ -25,6 +27,8 @@ filter-panel {
     color: transparent;
 }
 
+
+/* Checkbox */
 .checkbox {
     display: none;
 }
@@ -54,4 +58,18 @@ filter-panel {
     left: 2px;
     background: #413548;
     border-radius: 2px;
+}
+
+/* Dropdown */
+
+.filter-dropdown {
+    color: var(--black);
+}
+
+.filter-dropdown + ul {
+    top: 150% !important;
+}
+
+.filter-dropdown + ul:before {
+    display: none;
 }

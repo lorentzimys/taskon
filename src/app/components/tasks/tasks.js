@@ -59,7 +59,8 @@ export class TasksCtrl {
 
             return !(
                 (JSON.stringify(this.taskPropertyCollection) !== JSON.stringify(taskPropObj)) ||
-                t.text.indexOf(this.searchFieldValue) == -1
+                t.text.indexOf(this.searchFieldValue) == -1 ||
+                t.responsible !== this.filterMenuSelected.text
             )
 
         };
@@ -73,6 +74,20 @@ export class TasksCtrl {
         this.tasks = this.taskService.getAllTasks();
 
         this.taskProps = this.taskService.getTasksProperties();
+
+        this.filterMenuOptions = [
+            {
+                id: '1',
+                text: 'Виктор Лохматов',
+            },
+            {
+                id: '2',
+                text: 'Никита Ласточкин',
+            },
+        ];
+
+        this.filterMenuSelected = this.filterMenuOptions[0];
+
     }
 }
 

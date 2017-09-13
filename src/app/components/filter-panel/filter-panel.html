@@ -12,7 +12,12 @@
     </div>
 
     <div class="input-group">
-        <dropdown placeholder="{{}}" list="colours" selected="colour" property="name">Никита Ласточкин</dropdown>
+        <a class='custom-dropdown filter-dropdown'
+           dropdown-menu="tasks.filterMenuOptions"
+           dropdown-model="tasks.filterMenuSelected"
+           dropdown-item-label="text">
+            {{tasks.filterMenuSelected.text}}
+        </a>
     </div>
 
 </div>
