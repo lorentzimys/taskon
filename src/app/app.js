@@ -3,7 +3,6 @@ import angular from 'angular';
 import appHeader from './components/header/header';
 import tasks from './components/tasks/tasks';
 
-import 'angular-ui-router';
 import 'angular-animate';
 import 'angular-dropdowns';
 import '@uirouter/angularjs'
