@@ -69,7 +69,7 @@ module.exports = function makeWebpackConfig() {
             {
                 test: /\.json$/,
                 loader: 'json-loader'
-            },
+            }
         ]
     };
 
@@ -93,9 +93,9 @@ module.exports = function makeWebpackConfig() {
 
     if (isProd) {
         config.plugins.push(
-            new webpack.NoErrorsPlugin(),
-
-            new webpack.optimize.DedupePlugin(),
+            // new webpack.NoErrorsPlugin(),
+            //
+            // new webpack.optimize.DedupePlugin(),
 
             new webpack.optimize.UglifyJsPlugin(),
 

@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="balance-wrapper">
+    <div class="balance-wrapper" ng-click="$scope.decrement()">
         Баланс
         <span class="balance-value">{{header.balance | number}} &#8381;</span>
     </div>
@@ -14,7 +14,7 @@
            tooltip-speed="fast"></a>
     </div>
     <div class="userinfo-wrapper">
-        <a class='username custom-dropdown'
+        <a class="username custom-dropdown"
            dropdown-menu="header.userMenuOptions"
            dropdown-item-label="text">
             {{header.username}}

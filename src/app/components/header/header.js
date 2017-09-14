@@ -4,7 +4,7 @@ import headerMenuRight from "../header-menu-right/header-menu-right";
 
 import LayoutService from "../../services/LayoutService";
 
-const MODULE_NAME = 'app-header';
+const MODULE_NAME = 'appHeader';
 
 let header = () => {
     return {

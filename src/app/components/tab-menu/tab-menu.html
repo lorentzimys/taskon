@@ -1,18 +1,12 @@
 <ul class="tab-list">
     <div class="container">
-    <li class="tab-item" ng-class="(t.type === tasks.activeMenuItem) ? 'active' : ''" ng-repeat="t in tasks.taskTypes">
-        <a href="" ng-click="tasks.toggleMenu(t)">
-            {{t.text}}
-            <span class="items-count-label" ng-class="tasks.hasUnreadItems(t.type) ? 'unread' : ''">
-                {{tasks.getCountByType(t.type)}}
-            </span>
-        </a>
-    </li>
-        <!--<li class="tab-item active"><a href="/">Новые <span class="items-count-label">5</span></a></li>-->
-        <!--<li class="tab-item"><a href="/">В работе <span class="items-count-label important">3</span></a></li>-->
-        <!--<li class="tab-item"><a href="/">На рассмотрении <span class="items-count-label">35</span></a></li>-->
-        <!--<li class="tab-item"><a href="/">Выполнены <span class="items-count-label">123</span></a></li>-->
-        <!--<li class="tab-item"><a href="/">Отменены <span class="items-count-label">5</span></a></li>-->
-        <!--<li class="tab-item"><a href="/">Черновики <span class="items-count-label">5</span></a></li>-->
+        <li class="tab-item" ng-class="(t.type === tasks.activeMenuItem) ? 'active' : ''" ng-repeat="t in tasks.taskTypes">
+            <a href="#" ng-click="tasks.toggleMenu(t)">
+                {{t.text}}
+                <span class="items-count-label" ng-class="tasks.hasUnreadItems(t.type) ? 'unread' : ''">
+                    {{tasks.getCountByType(t.type)}}
+                </span>
+            </a>
+        </li>
     </div>
 </ul>

@@ -5,16 +5,17 @@
 
     <div class="input-group" class="checkbox" ng-click="tasks.togglePropCheckbox(prop, $event)" ng-repeat="prop in tasks.taskProps">
         <label for="{{prop.type}}_checkbox">
-            <input id="{{prop.type}}_checkbox" ng-value="prop.type" class="checkbox" type="checkbox">
+            <input id="{{prop.type}}_checkbox" ng-value="prop.type" ng-checked="tasks.isActiveProp(prop.type)" class="checkbox" type="checkbox">
             <div class="checkbox-custom"></div>
             <div class="label">{{prop.text}}</div>
         </label>
     </div>
 
     <div class="input-group">
-        <a class='custom-dropdown filter-dropdown'
+        <a class="custom-dropdown filter-dropdown"
            dropdown-menu="tasks.filterMenuOptions"
            dropdown-model="tasks.filterMenuSelected"
+           dropdown-onchange="tasks.dropdownChange(selected)"
            dropdown-item-label="text">
             {{tasks.filterMenuSelected.text}}
         </a>

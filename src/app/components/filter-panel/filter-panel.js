@@ -11,10 +11,7 @@ let filterPanel = () => {
 };
 
 class FilterPanelCtrl {
-    constructor($scope) {
-        console.log($scope);
-
-    }
+    constructor($scope) {}
 }
 
 angular.module(MODULE_NAME, [])

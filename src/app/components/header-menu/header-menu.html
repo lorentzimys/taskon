@@ -1,3 +1,5 @@
 <ul class="header-menu-list">
-    <li ng-repeat="item in menuItems"><a href="{{item.href}}">{{item.title}}</a></li>
+    <li ng-repeat="item in menuItems">
+        <a ui-sref="{{item.href}}" ui-sref-active="active">{{item.title}}</a>
+    </li>
 </ul>

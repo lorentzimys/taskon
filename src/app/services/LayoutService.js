@@ -2,33 +2,28 @@ import layoutApi from "../../api/layout.json";
 import Person from "../models/Person";
 
 export default class LayoutService {
-
-    constructor(module) {
-        this.test = () => {
-            console.log(layoutApi);
-        };
-
-        this.getMenuItems = () => {
-            return layoutApi[0].menu.items;
-        };
+    constructor() {
+        let data = layoutApi[0];
 
         this.getCurrentBalance = () => {
-            let person = new Person(layoutApi[0].personalInfo);
+            let person = new Person(data.personalInfo);
 
             return person.balance;
         };
 
         this.getPersonalInfo = () => {
-            let username = new Person(layoutApi[0].personalInfo);
+            let username = new Person(data.personalInfo);
 
             return username;
         };
 
         this.getNotifications = () => {
-            return layoutApi[0].personalInfo.notifications;
+            return data.personalInfo.notifications;
         };
 
-        // return module.service("layoutService", () => {});
+        this.getMenuItems = () => {
+            return data.menu.items;
+        };
     }
 
 }

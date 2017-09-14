@@ -17,7 +17,6 @@ class HeaderMenuCtrl {
         this.layoutService = new LayoutService();
 
         $scope.menuItems = this.layoutService.getMenuItems();
-
     }
 }
 

@@ -1,6 +1,5 @@
 import "./tab-menu.css";
 
-
 const MODULE_NAME = 'tabMenu';
 
 let tabMenu = () => {
@@ -14,11 +13,6 @@ let tabMenu = () => {
 class TabMenuCtrl {
     constructor($scope) {
 
-        console.log($scope);
-
-        this.filterTask = () => {
-            console.log("filter");
-        }
     }
 }
 

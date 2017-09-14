@@ -4,7 +4,7 @@ import TaskType from "../models/TaskType";
 
 export default class TasksService {
 
-    constructor(module) {
+    constructor() {
 
         this.getTaskTypes = () => {
             return tasksApi[0].taskTypes.map((t) => new TaskType(t));
@@ -43,8 +43,6 @@ export default class TasksService {
                 throw new Error("Неверный тип для параметра tasks, должен быть Array", "TasksService.js");
             }
         };
-
-        // return module.service("tasksService", () => {});
     }
 
 }

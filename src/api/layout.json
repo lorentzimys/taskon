@@ -4,19 +4,19 @@
       "items": [
         {
           "title": "Задания",
-          "href": "/tasks"
+          "href": "tasks"
         },
         {
           "title": "Финансы",
-          "href": "/finances"
+          "href": "finances"
         },
         {
           "title": "Компания",
-          "href": "/about"
+          "href": "about"
         },
         {
           "title": "Статистика",
-          "href": "/stats"
+          "href": "stats"
         }
       ]
     },
